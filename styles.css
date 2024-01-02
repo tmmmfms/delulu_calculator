@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.slider-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.center-button {
+  width: 80%;
+  margin: 10px auto;
+  display: block;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="range"] {
+  width: 300px; /* Set a fixed width for the slider, adjust as needed */
+  margin: 10px auto;
+  display: block;
+}
+
+#sliderValue1,
+#sliderValue2,
+#sliderValue3,
+#sliderValue4 {
+  font-size: 24px;
+  margin-top: 10px;
+}
