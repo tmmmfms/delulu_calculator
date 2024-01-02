@@ -9,49 +9,51 @@
 </head>
 
 <body>
-    <h1>Delulu Calculator</h1>
+    <div class="container">
+        <h1>Delulu Calculator</h1>
 
-    <div class="slider-container">
-        <label for="slider1">Minimum Age:</label>
-        <input type="range" id="slider1" min="0" max="1" value="0" step="0.0169" />
-        <div id="sliderValue1">Random Number 1 | Random Number 2</div>
-    </div>
+        <div class="slider-container">
+            <label for="slider1">Minimum Age:</label>
+            <input type="range" id="slider1" min="0" max="1" value="0" step="0.0169" />
+            <div id="sliderValue1">Random Number 1 | Random Number 2</div>
+        </div>
 
-    <div class="slider-container">
-        <label for="slider2">Maximum Age:</label>
-        <input type="range" id="slider2" min="0" max="1" value="0" step="0.0169" />
-        <div id="sliderValue2">Random Number 3 | Random Number 4</div>
-    </div>
+        <div class="slider-container">
+            <label for="slider2">Maximum Age:</label>
+            <input type="range" id="slider2" min="0" max="1" value="0" step="0.0169" />
+            <div id="sliderValue2">Random Number 3 | Random Number 4</div>
+        </div>
 
-    <div class="slider-container">
-        <label for="slider3">Minimum monthly income:</label>
-        <input type="range" id="slider3" min="0" max="1" value="0" step="0.1" />
-        <div id="sliderValue3">Random Number 3 | Random Number 4</div>
-    </div>
+        <div class="slider-container">
+            <label for="slider3">Minimum monthly income:</label>
+            <input type="range" id="slider3" min="0" max="1" value="0" step="0.1" />
+            <div id="sliderValue3">Random Number 3 | Random Number 4</div>
+        </div>
 
-    <div class="slider-container">
-        <label for="slider4">Race:</label>
-        <input type="range" id="slider4" min="0" max="1" value="0" step="0.333" />
-        <div id="sliderValue4">Random Number 3 | Random Number 4</div>
-    </div>
+        <div class="slider-container">
+            <label for="slider4">Race:</label>
+            <input type="range" id="slider4" min="0" max="1" value="0" step="0.333" />
+            <div id="sliderValue4">Random Number 3 | Random Number 4</div>
+        </div>
 
-    <!-- Display the multiplication result -->
-    <div id="multiplicationResult">
-        <button id="displayResultButton" class="center-button">Display Result</button>
-        <br> <!-- Add a line break to separate the button and the result -->
-        Percentage of population: <span id="resultValue">0</span>%
-        <br> <!-- Add a line break to separate the button and the result -->
-        Population: <span id="resultVolumeValue">0</span>
-    </div>
+        <!-- Display the multiplication result -->
+        <div id="multiplicationResult">
+            <button id="displayResultButton" class="center-button">Display Result</button>
+            <br> <!-- Add a line break to separate the button and the result -->
+            Percentage of population: <span id="resultValue">0</span>%
+            <br> <!-- Add a line break to separate the button and the result -->
+            Population: <span id="resultVolumeValue">0</span>
+        </div>
 
-    <!-- Add this button element at the bottom of your HTML body -->
-    <button id="resetSlidersButton" class="center-button">Reset Sliders</button>
+        <!-- Add this button element at the bottom of your HTML body -->
+        <button id="resetSlidersButton" class="center-button">Reset Sliders</button>
 
-    <div id="sliderValuesDisplay">
-        <p>Slider 1 Value: <span id="displaySlider1Value">0</span></p>
-        <p>Slider 2 Value: <span id="displaySlider2Value">0</span></p>
-        <p>Slider 3 Value: <span id="displaySlider3Value">0</span></p>
-        <p>Slider 4 Value: <span id="displaySlider4Value">0</span></p>
+        <div id="sliderValuesDisplay">
+            <p>Slider 1 Value: <span id="displaySlider1Value">0</span></p>
+            <p>Slider 2 Value: <span id="displaySlider2Value">0</span></p>
+            <p>Slider 3 Value: <span id="displaySlider3Value">0</span></p>
+            <p>Slider 4 Value: <span id="displaySlider4Value">0</span></p>
+        </div>
 
     </div>
 
