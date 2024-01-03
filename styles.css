@@ -1,5 +1,5 @@
 body {
-  -webkit-font-smoothing: antialiased; /* Example of using a vendor prefix */
+  -webkit-appearance: none;
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: rgb(0, 0, 0);
