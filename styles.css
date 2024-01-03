@@ -1,5 +1,4 @@
 body {
-  -webkit-appearance: none;
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: rgb(0, 0, 0);
@@ -16,6 +15,7 @@ h1 {
 }
 
 .slider-container {
+  -webkit-appearance: none;
   text-align: center;
   margin-bottom: 20px;
 }
