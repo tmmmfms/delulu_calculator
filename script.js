@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var resetSlidersButton = document.getElementById('resetSlidersButton');
 
+    var wowMessage = document.getElementById('wowMessage');
+
     // Random numbers arrays for each slider
     var randomNumbers1 = [
         18, 19, 20, 21, 22, 23, 24, 25, 26, 27,
@@ -157,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var index = Math.round(slider.value * (numbersSet1.length - 1));
 
         // Display both sets of random numbers for the corresponding slider
-        sliderValue.textContent = numbersSet1[index] + " | " + numbersSet2[index];
+        sliderValue.textContent = numbersSet1[index];
 
         // If Slider 1 is greater than Slider 2, adjust Slider 2
         if (slider === slider1 && parseFloat(slider1.value) >= parseFloat(slider2.value)) {
@@ -184,6 +186,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     displayResultButton.addEventListener('click', function () {
         displayMultiplicationResultWithDelay(result);
+        displayCustomMessage(result);
+
     });
 
     function displayCurrentValues() {
@@ -225,4 +229,16 @@ document.addEventListener('DOMContentLoaded', function () {
         displayMultiplicationResult(result);
 
     });
+
+    function displayCustomMessage(result) {
+        if (result > 0.01) {
+            wowMessage.textContent = 'you got some chance';
+            wowMessage.style.color = 'green'; // Customize the color
+        } else {
+            wowMessage.textContent = "you're fucked";
+            wowMessage.style.color = 'red'; // Customize the color
+        }
+        wowMessage.style.display = 'block';
+    }
+
 });
